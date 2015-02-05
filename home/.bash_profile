@@ -1,7 +1,6 @@
 ############################################################
 # .bash_profile
 ############################################################
-fortune | cowsay
 export debug_source=false
 # load helper functions (Includes source_if_exists)
 source $HOME/.bash_func
