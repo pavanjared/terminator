@@ -105,5 +105,10 @@ if [[ -n "$PS1" ]]; then
     fi
 
     export PS1="$PBJ $SvnInfoWColor$GitInfoWColor$NewLine$arrow_char $Color_Off"
+
+    # make sure that tmux (1) exists on the system and (2) doesn't try to run within itself
+    if command -v tmux>/dev/null; then
+        [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+    fi
   }
 fi
