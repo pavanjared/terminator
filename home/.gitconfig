@@ -69,4 +69,7 @@
 [init]
   templatedir = ~/.git_template
 [hub]
-  host = github.com
+	host = github.va.opower.it
+[user]
+	name = jared-pavan
+	email = jared.pavan@opower.com
