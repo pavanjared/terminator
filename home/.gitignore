@@ -2,3 +2,5 @@ tags
 sandcube
 .zession.vim
 .DS_Store
+.idea/
+.idea/clientfeatures.iml

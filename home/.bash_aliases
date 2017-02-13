@@ -33,6 +33,11 @@ alias hr="cd $HSR"
 alias rakeit="rake db:drop && rake db:create && rake db:migrate && rake db:seed"
 alias beeline="beeline --color=true"
 alias tree="tree -I sandcube"
+alias gr="git remote -v"
+alias gs="git status"
+alias a="brightness 0"
+alias s="brightness .9"
+alias hs="history | grep"
 
 alias hideme='history -d $((HISTCMD-1)) &&'
 

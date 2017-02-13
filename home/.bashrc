@@ -6,9 +6,9 @@ if [[ -n "$PS1" ]]; then
   fortune | cowsay
   
   # make sure that tmux (1) exists on the system and (2) doesn't try to run within itself
-  if command -v tmux>/dev/null; then
-      [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-  fi
+  # if command -v tmux>/dev/null; then
+  #     [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+  # fi
 
   # append to the history file, don't overwrite it
   shopt -s histappend
